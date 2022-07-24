@@ -39,6 +39,11 @@ body {
   height: calc(100vh - (var(--body-padding) * 2));
 }
 
+h1 {
+  font-size: var(--font-size-700);
+  font-weight: 700;
+}
+
 .flex-row {
   display: flex;
   gap: var(--gap, var(--space-4));
@@ -63,9 +68,16 @@ body {
 .stack {
   display: grid;
   grid-template-areas: 'stack';
+  padding: var(--body-padding);
 }
 .stack > * {
   grid-area: stack;
+}
+.stack header {
+  align-self: start;
+}
+.stack footer {
+  align-self: end;
 }
 
 .nav-list {
@@ -90,8 +102,12 @@ body {
   align-content: center;
 }
 
+.stack {
+  position: relative;
+}
 .video-bg {
   z-index: -1;
   background: gray;
-  padding: var(--body-padding);
+  position: absolute;
+  inset: calc(-1 * var(--body-padding));
 }
