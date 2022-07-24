@@ -50,6 +50,12 @@ body {
   grid-auto-columns: 1fr;
 }
 
+.grid-70-30 {
+  display: grid;
+  gap: var(--gap, var(--space-4));
+  grid-template-columns: 70% 30%;
+}
+
 .main-grid {
   display: grid;
   grid-template-columns: 200px 1fr;
