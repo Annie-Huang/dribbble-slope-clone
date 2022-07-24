@@ -48,6 +48,17 @@ body {
   grid-auto-columns: 1fr;
 }
 
+.main-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.main-grid > :nth-child(1) {
+  text-align: center;
+  display: grid;
+  align-content: space-between;
+}
+
 .video-bg {
   background: gray;
   padding: var(--body-padding);
