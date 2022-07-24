@@ -28,3 +28,18 @@ body {
   font-size: var(--font-size-400);
   font-family: system-ui, sans-serif;
 }
+
+.flex-row {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid-even-columns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.video-bg {
+  background: gray;
+}
