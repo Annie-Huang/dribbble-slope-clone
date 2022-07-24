@@ -100,9 +100,16 @@ h1 {
   align-content: space-between;
 }
 
+.nav-grid {
+  background: var(--clr-neutral-100);
+  color: var(--clr-neutral-900);
+  z-index: 5;
+}
 .content-grid {
   display: grid;
   align-content: center;
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
 }
 
 .stack {
