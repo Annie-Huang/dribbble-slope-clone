@@ -52,6 +52,9 @@ h1 {
 .justify-content-space-between {
   justify-content: space-between;
 }
+.align-content-center {
+  align-content: center;
+}
 
 .grid-even-columns {
   display: grid;
