@@ -1,0 +1,12 @@
+:root {
+  --clr-primary-400: hsl(243, 95%, 39%);
+  --clr-neutral-100: #fff;
+  --clr-neutral-300: hsl(0, 0%, 70%);
+  --clr-neutral-900: #000;
+
+  --font-size-300: 0.975rem;
+  --font-size-400: 1.125rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.75rem;
+  --font-size-700: 3rem;
+}
