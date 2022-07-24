@@ -60,6 +60,14 @@ body {
   grid-template-columns: 70% 30%;
 }
 
+.stack {
+  display: grid;
+  grid-template-areas: 'stack';
+}
+.stack > * {
+  grid-area: stack;
+}
+
 .nav-list {
   list-style: none;
   font-weight: 700;
@@ -77,12 +85,9 @@ body {
   align-content: space-between;
 }
 
-.stack {
+.content-grid {
   display: grid;
-  grid-template-areas: 'stack';
-}
-.stack > * {
-  grid-area: stack;
+  align-content: center;
 }
 
 .video-bg {
