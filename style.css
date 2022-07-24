@@ -41,7 +41,11 @@ body {
 
 .flex-row {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, var(--space-4));
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
 }
 
 .grid-even-columns {
