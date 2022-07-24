@@ -35,6 +35,8 @@ body {
   margin: var(--body-padding);
   font-size: var(--font-size-400);
   font-family: system-ui, sans-serif;
+  display: grid; /* grid will make .main-grid auto stretch for all whole heigh space in <body> */
+  height: calc(100vh - (var(--body-padding) * 2));
 }
 
 .flex-row {
@@ -51,6 +53,7 @@ body {
 .main-grid {
   display: grid;
   grid-template-columns: 200px 1fr;
+  gap: 0 var(--body-padding);
 }
 
 .main-grid > :nth-child(1) {
