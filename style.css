@@ -10,3 +10,21 @@
   --font-size-600: 1.75rem;
   --font-size-700: 3rem;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: var(--font-size-400);
+  font-family: system-ui, sans-serif;
+}
