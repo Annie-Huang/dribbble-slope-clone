@@ -78,9 +78,11 @@ h1 {
 }
 .stack header {
   align-self: start;
+  z-index: 100;
 }
 .stack footer {
   align-self: end;
+  z-index: 100;
 }
 
 .nav-list {
@@ -128,4 +130,9 @@ h1 {
   background: gray;
   position: absolute;
   inset: calc(-1 * var(--body-padding));
+}
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
