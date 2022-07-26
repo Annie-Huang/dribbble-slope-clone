@@ -104,7 +104,15 @@ h1 {
   background: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
   z-index: 5;
+
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 300ms ease;
 }
+/* You can manually test through adding .closed into <div class="nav-grid grid-even-columns align-content-center closed">*/
+.nav-grid.closed {
+  clip-path: inset(0 100% 0 0);
+}
+
 .content-grid {
   display: grid;
   align-content: center;
