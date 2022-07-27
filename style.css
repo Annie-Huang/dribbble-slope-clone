@@ -117,20 +117,30 @@ h1 {
 
 .content-grid {
   display: grid;
-  align-content: center;
-  background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
 }
 
 .stack {
   position: relative;
 }
-.video-bg {
-  z-index: -1;
-  background: gray;
+.video-bg,
+.bg-primary,
+.bg-white {
   position: absolute;
   inset: calc(-1 * var(--body-padding));
 }
+.bg-primary {
+  z-index: -2;
+  mix-blend-mode: multiply;
+  background: var(--clr-primary-400);
+}
+.bg-white {
+  z-index: -1;
+}
+.video-bg {
+  z-index: -3;
+}
+
 .video-bg video {
   width: 100%;
   height: 100%;
