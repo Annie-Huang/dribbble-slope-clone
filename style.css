@@ -136,6 +136,8 @@ h1 {
 }
 .bg-white {
   z-index: -1;
+  background: purple;
+  /*mix-blend-mode: saturation;*/
 }
 .video-bg {
   z-index: -3;
