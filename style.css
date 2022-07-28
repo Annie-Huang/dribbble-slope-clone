@@ -122,20 +122,21 @@ h1 {
 .nav-grid-bg {
   background: var(--clr-neutral-100);
 }
-[data-big-nav='closed'] .nav-grid-bg,
-[data-big-nav='closed'] .nav-grid {
+
+.nav-grid-bg,
+.nav-grid {
   clip-path: inset(0 100% 0 0);
 }
-[data-big-nav='open'] .nav-grid-bg,
-[data-big-nav='open'] .nav-grid {
+[data-big-nav-open] .nav-grid-bg,
+[data-big-nav-open] .nav-grid {
   clip-path: inset(0 0 0 0);
 }
-[data-big-nav='open'] .content-grid-bg,
-[data-big-nav='open'] .content-grid {
+[data-big-nav-open] .content-grid-bg,
+[data-big-nav-open] .content-grid {
   clip-path: inset(0 0 0 100%);
 }
-[data-big-nav='closed'] .content-grid-bg,
-[data-big-nav='closed'] .content-grid {
+.content-grid-bg,
+.content-grid {
   clip-path: inset(0 0 0 0);
 }
 
