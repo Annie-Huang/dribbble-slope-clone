@@ -103,7 +103,7 @@ h1 {
 }
 
 .nav-grid {
-  background: var(--clr-neutral-100);
+  /*background: var(--clr-neutral-100);*/
   color: var(--clr-neutral-900);
   z-index: 5;
 
@@ -112,7 +112,7 @@ h1 {
 }
 /* You can manually test through adding .closed into <div class="nav-grid grid-even-columns align-content-center closed">*/
 .closed-clip-path {
-  clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0) !important;
 }
 
 .content-grid {
@@ -137,7 +137,8 @@ h1 {
 .bg-white {
   z-index: -1;
   background: purple;
-  /*mix-blend-mode: saturation;*/
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 300ms ease;
 }
 .video-bg {
   z-index: -3;
