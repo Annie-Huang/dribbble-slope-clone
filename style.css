@@ -110,6 +110,35 @@ h1 {
   clip-path: inset(0 0 0 0);
   transition: clip-path 300ms ease;
 }
+
+.content-grid-bg,
+.nav-grid-bg {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 300ms ease;
+}
+.content-grid-bg {
+  background: var(--clr-primary-400);
+}
+.nav-grid-bg {
+  background: var(--clr-neutral-100);
+}
+[data-big-nav='closed'] .nav-grid-bg,
+[data-big-nav='closed'] .nav-grid {
+  clip-path: inset(0 100% 0 0);
+}
+[data-big-nav='open'] .nav-grid-bg,
+[data-big-nav='open'] .nav-grid {
+  clip-path: inset(0 0 0 0);
+}
+[data-big-nav='open'] .content-grid-bg,
+[data-big-nav='open'] .content-grid {
+  clip-path: inset(0 0 0 100%);
+}
+[data-big-nav='closed'] .content-grid-bg,
+[data-big-nav='closed'] .content-grid {
+  clip-path: inset(0 0 0 0);
+}
+
 /* You can manually test through adding .closed into <div class="nav-grid grid-even-columns align-content-center closed">*/
 .closed-clip-path {
   clip-path: inset(0 100% 0 0) !important;
