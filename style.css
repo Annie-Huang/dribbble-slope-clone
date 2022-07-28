@@ -111,7 +111,7 @@ h1 {
   transition: clip-path 300ms ease;
 }
 /* You can manually test through adding .closed into <div class="nav-grid grid-even-columns align-content-center closed">*/
-.nav-grid.closed {
+.closed-clip-path {
   clip-path: inset(0 100% 0 0);
 }
 
