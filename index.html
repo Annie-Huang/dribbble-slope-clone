@@ -19,7 +19,13 @@
       </div>
       <div class="stack">
         <header class="flex-row justify-content-space-between">
-          <button class="menu-toggle">Menu</button>
+          <button
+            aria-controls="nav-grid"
+            aria-expanded="false"
+            class="menu-toggle"
+          >
+            Menu
+          </button>
           <nav class="primary-nav">
             <ul class="nav-list flex-row" style="--gap: 3rem">
               <li>Lorem</li>
@@ -29,7 +35,10 @@
             </ul>
           </nav>
         </header>
-        <div class="nav-grid grid-even-columns align-content-center">
+        <div
+          id="nav-grid"
+          class="nav-grid grid-even-columns align-content-center"
+        >
           <div>
             <h3>Lorem.</h3>
             <ul>
