@@ -108,13 +108,13 @@ h1 {
   z-index: 5;
 
   clip-path: inset(0 0 0 0);
-  transition: clip-path 300ms ease;
+  transition: clip-path 500ms ease;
 }
 
 .content-grid-bg,
 .nav-grid-bg {
   clip-path: inset(0 0 0 0);
-  transition: clip-path 300ms ease;
+  transition: clip-path 500ms ease;
 }
 .content-grid-bg {
   background: var(--clr-primary-400);
@@ -154,20 +154,20 @@ h1 {
   position: relative;
 }
 .video-bg,
-.bg-primary,
-.bg-white {
+.content-grid-bg,
+.nav-grid-bg {
   position: absolute;
   inset: calc(-1 * var(--body-padding));
 }
-.bg-primary {
+.content-grid-bg {
   z-index: -2;
   mix-blend-mode: multiply;
   background: var(--clr-primary-400);
 }
-.bg-white {
+.nav-grid-bg {
   z-index: -1;
-  background: purple;
-  clip-path: inset(0 0 0 0);
+  background: white;
+  mix-blend-mode: saturation;
   transition: clip-path 300ms ease;
 }
 .video-bg {
