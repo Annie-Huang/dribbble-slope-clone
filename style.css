@@ -125,6 +125,9 @@ h1 {
   clip-path: inset(0 100% 0 0);
   transition: clip-path 500ms ease;
 }
+.nav-grid-bg {
+  transition-delay: 500ms;
+}
 .content-grid-bg,
 .content-grid {
   clip-path: inset(0 0 0 0);
@@ -133,6 +136,9 @@ h1 {
 [data-big-nav-open] .nav-grid-bg,
 [data-big-nav-open] .nav-grid {
   clip-path: inset(0 0 0 0);
+}
+[data-big-nav-open] .nav-grid {
+  transition-delay: 200ms;
 }
 [data-big-nav-open] .content-grid-bg,
 [data-big-nav-open] .content-grid {
